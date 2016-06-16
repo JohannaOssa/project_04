@@ -1,3 +1,4 @@
+index
 <html lang="es">
   <head>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
@@ -6,9 +7,46 @@
     <script type="text/javascript" src="../project_04/assets/script.js"></script>
   </head>
   <body>
-  <button class="btn btn-primary" type="submit" onclick="listarPersonas()">Mostrar Lista</button>
-  <table id="people-table">
-  </table>
+    <div>
+      </br>
+      <button class="btn btn-primary" type="submit" onclick="listarPersonas()">Mostrar Lista</button>
+      <table id="people-table">
+      </table>
+    </div>
+    <div>
+      </br>
+      <button class="btn btn-primary" type="submit" onclick="calcularraiz()">Raíz Cuadrada</button>
+    </div>
+    <div>
+      </br>
+      <table>
+        <tr>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Edad</th>
+          <th>Botón</th>
+        </tr>
+        </tr>
+        <td>Johanna</td>
+        <td>Ossa</td>
+        <td>21</td>
+        <td><button class="btn btn-primary" type="submit" onclick="Eliminar(this.parentNode.parentNode.rowIndex)">Borrar</button></td>
+        </tr>
+        <tr class="alt">
+        <td>Marcela</td>
+        <td>Duque</td>
+        <td>19</td>
+        <td><input type="button" value="Eliminar" onclick="Eliminar(this.parentNode.parentNode.rowIndex)"/></td>
+        </tr>
+        <tr>
+        <td>Juliana</td>
+        <td>Arango</td>
+        <td>17</td>
+        <td><input type="button" value="Eliminar" onclick="Eliminar(this.parentNode.parentNode.rowIndex)"/></td>
+        </tr>
+      </table>
+    </div>
+
 </body>
 
 </html>
